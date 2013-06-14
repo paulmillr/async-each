@@ -2,6 +2,8 @@
 
 No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach function for JavaScript.
 
+We don't need junky 30K async libs. Really.
+
 For browsers and node.js.
 
 ## Installation
