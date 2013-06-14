@@ -15,13 +15,11 @@
         if (returned) return;
         if (error) {
           returned = true;
-          return callback(error);
+          return callback(new Error(error));
         }
         transformed[index] = transformedItem;
         count += 1;
-        if (count === items.length) {
-          callback(undefined, transformed)
-        }
+        if (count === items.length) return callback(undefined, transformed);
       });
     });
   };
