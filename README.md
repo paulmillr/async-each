@@ -1,6 +1,6 @@
 # async-each
 
-No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach function for JavaScript
+No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach function for JavaScript.
 
 For browsers and node.js.
 
@@ -13,7 +13,6 @@ For browsers and node.js.
 ## Usage
 
 * `each(array, eachFunction, optionalCallback);`
-* array must be an `Array`, `eachFunction` must be a `Function`
 * optionalCallback optionally receives error and transformed result `Array`
   (you can transform items with `eachFunction`)
 
