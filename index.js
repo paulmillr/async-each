@@ -6,6 +6,8 @@
     if (typeof next !== 'function') throw new TypeError('each() expects function as second argument');
     if (typeof callback !== 'function') callback = Function.prototype; // no-op
 
+    if (items.length === 0) return callback(undefined, items);
+
     var transformed = new Array(items.length);
     var count = 0;
     var returned = false;
