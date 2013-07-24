@@ -17,7 +17,7 @@
         if (returned) return;
         if (error) {
           returned = true;
-          return callback(new Error(error));
+          return callback(error);
         }
         transformed[index] = transformedItem;
         count += 1;
