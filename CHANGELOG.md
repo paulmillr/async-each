@@ -1,3 +1,6 @@
+# async-each 0.1.3 (25 July 2013)
+* Fixed double wrapping of errors.
+
 # async-each 0.1.2 (7 July 2013)
 * Fixed behaviour on empty arrays.
 
