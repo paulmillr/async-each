@@ -28,7 +28,7 @@
 
   if (typeof define === 'function' && typeof define.amd === 'object') {
     define(each); // RequireJS
-  } else if (typeof module === 'object' && module.exports) {
+  } else if (typeof module !== 'undefined' && module.exports) {
     module.exports = each; // CommonJS
   } else {
     globals.asyncEach = each; // <script>
