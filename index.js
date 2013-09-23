@@ -26,8 +26,10 @@
     });
   };
 
-  if (typeof define === 'function' && typeof define.amd === 'object') {
-    define(each); // RequireJS
+  if (typeof define !== 'undefined' && define.amd) {
+    define([], function () {
+      return each;
+    }); // RequireJS
   } else if (typeof module !== 'undefined' && module.exports) {
     module.exports = each; // CommonJS
   } else {
