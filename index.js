@@ -1,4 +1,4 @@
-// MIT license (by Paul Miller from http://paulmillr.com).
+// async-each MIT license (by Paul Miller from http://paulmillr.com).
 (function(globals) {
   'use strict';
   var each = function(items, next, callback) {

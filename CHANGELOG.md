@@ -1,3 +1,6 @@
+# async-each 0.1.4 (12 November 2013)
+* Fixed AMD definition.
+
 # async-each 0.1.3 (25 July 2013)
 * Fixed double wrapping of errors.
 
