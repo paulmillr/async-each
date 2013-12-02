@@ -27,7 +27,7 @@
   };
 
   if (typeof define !== 'undefined' && define.amd) {
-    define([], function () {
+    define([], function() {
       return each;
     }); // RequireJS
   } else if (typeof module !== 'undefined' && module.exports) {
