@@ -14,15 +14,16 @@ For browsers and node.js.
 
 ## Usage
 
-* `each(array, eachFunction, optionalCallback);`
-* optionalCallback optionally receives error and transformed result `Array`
+* `each(array, eachFunction, optionalCallback);` — `Array`, `Function`, `(optional) Function`
+* `eachFunction(item, next)` receives current item and a callback that will mark the item as done. Callback receives optional `error, transformedItem` arguments.
+* `optionalCallback(error, transformedArray)` optionally receives error and transformed result `Array`
   (you can transform items with `eachFunction`)
 
 Node.js:
 
 ```javascript
 var each = require('async-each');
-each(['a', 'b', 'c'], fs.readFile, function(error, contents) {
+each(['a.js', 'b.js', 'c.js'], fs.readFile, function(error, contents) {
   if (error) console.error(error);
   console.log('Contents for a, b and c:', contents);
 });
