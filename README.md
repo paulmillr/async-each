@@ -16,8 +16,7 @@ For browsers and node.js.
 
 * `each(array, eachFunction, optionalCallback);` — `Array`, `Function`, `(optional) Function`
 * `eachFunction(item, next)` receives current item and a callback that will mark the item as done. Callback receives optional `error, transformedItem` arguments.
-* `optionalCallback(error, transformedArray)` optionally receives error and transformed result `Array`
-  (you can transform items with `eachFunction`)
+* `optionalCallback(error, transformedArray)` optionally receives first error and transformed result `Array`.
 
 Node.js:
 
