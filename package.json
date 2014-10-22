@@ -14,9 +14,6 @@
   "author": "Paul Miller (http://paulmillr.com/)",
   "repository": "git://github.com/paulmillr/async-each.git",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha --require test/test_helpers.js"
-  },
   "dependencies": {}
 }
 
