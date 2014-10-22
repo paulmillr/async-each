@@ -1,3 +1,6 @@
+# async-each 0.1.5 (22 October 2014)
+* Clean up package.json to fix npm warning about `repo`
+
 # async-each 0.1.4 (12 November 2013)
 * Fixed AMD definition.
 
