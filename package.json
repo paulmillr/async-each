@@ -1,6 +1,5 @@
 {
   "name": "async-each",
-  "repo": "paulmillr/async-each",
   "description": "No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach / map function for JavaScript.",
   "version": "0.1.4",
   "keywords": [
