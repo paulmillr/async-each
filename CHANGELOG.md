@@ -1,3 +1,6 @@
+# async-each 0.1.6 (5 November 2014)
+* Add license to package.json
+
 # async-each 0.1.5 (22 October 2014)
 * Clean up package.json to fix npm warning about `repo`
 
