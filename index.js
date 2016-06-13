@@ -12,7 +12,8 @@
     var count = 0;
     var returned = false;
 
-    items.forEach(function(item, index) {
+    for (var index = 0; index < items.length; i++) {
+      var item = items[i];
       next(item, function(error, transformedItem) {
         if (returned) return;
         if (error) {
@@ -23,7 +24,7 @@
         count += 1;
         if (count === items.length) return callback(undefined, transformed);
       });
-    });
+    }
   };
 
   if (typeof define !== 'undefined' && define.amd) {
