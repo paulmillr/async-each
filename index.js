@@ -12,7 +12,7 @@
     var count = 0;
     var returned = false;
 
-    for (var index = 0; index < items.length; i++) {
+    for (var index = 0; index < items.length; index++) {
       var item = items[index];
       next(item, function(_index) {
         return function(error, transformedItem) {
