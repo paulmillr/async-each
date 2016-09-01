@@ -4,11 +4,11 @@
   var each = function(items, next, callback) {
     if (!Array.isArray(items)) throw new TypeError('each() expects array as first argument');
     if (typeof next !== 'function') throw new TypeError('each() expects function as second argument');
-    if (typeof callback !== 'function') callback = Function.prototype; // no-op
+    if (typeof callback !== 'function') callback = function() {};
 
-    if (items.length === 0) return callback(undefined, items);
+    if (!items.length) return callback(undefined, items);
 
-    var transformed = new Array(items.length);
+    var transformed = [];
     var count = 0;
     var returned = false;
 
@@ -20,7 +20,7 @@
           return callback(error);
         }
         transformed[index] = transformedItem;
-        count += 1;
+        count++;
         if (count === items.length) return callback(undefined, transformed);
       });
     });
