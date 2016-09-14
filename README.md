@@ -17,22 +17,17 @@ For browsers and node.js.
 * `iterator(item, next)` receives current item and a callback that will mark the item as done. `next` callback receives optional `error, transformedItem` arguments.
 * `callback(error, transformedArray)` optionally receives first error and transformed result `Array`.
 
-Node.js:
-
 ```javascript
 var each = require('async-each');
 each(['a.js', 'b.js', 'c.js'], fs.readFile, function(error, contents) {
   if (error) console.error(error);
   console.log('Contents for a, b and c:', contents);
 });
-```
 
-Browser:
-
-```javascript
-window.asyncEach(list, fn, callback);
+// Alternatively in browser:
+asyncEach(list, fn, callback);
 ```
 
 ## License
 
-[The MIT License](https://github.com/paulmillr/mit)
+[MIT](https://github.com/paulmillr/mit) (c) 2016 Paul Miller (http://paulmillr.com)
