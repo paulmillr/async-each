@@ -35,4 +35,4 @@ window.asyncEach(list, fn, callback);
 
 ## License
 
-[The MIT License](https://raw.githubusercontent.com/paulmillr/mit/master/README.md)
+[The MIT License](https://github.com/paulmillr/mit)
