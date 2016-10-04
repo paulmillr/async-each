@@ -12,18 +12,21 @@
     var count = 0;
     var returned = false;
 
-    items.forEach(function(item, index) {
-      next(item, function(error, transformedItem) {
-        if (returned) return;
-        if (error) {
-          returned = true;
-          return callback(error);
+    for (var index = 0; index < items.length; index++) {
+      var item = items[index];
+      next(item, function(_index) {
+        return function(error, transformedItem) {
+          if (returned) return;
+          if (error) {
+            returned = true;
+            return callback(error);
+          }
+          transformed[_index] = transformedItem;
+          count += 1;
+          if (count === items.length) return callback(undefined, transformed);
         }
-        transformed[index] = transformedItem;
-        count += 1;
-        if (count === items.length) return callback(undefined, transformed);
-      });
-    });
+      }(index));
+    }
   };
 
   if (typeof define !== 'undefined' && define.amd) {
