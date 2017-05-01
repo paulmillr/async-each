@@ -13,7 +13,7 @@
     var returned = false;
 
     items.forEach(function(item, index) {
-      next(item, function(error, transformedItem) {
+      next(item, index, function(error, transformedItem) {
         if (returned) return;
         if (error) {
           returned = true;
