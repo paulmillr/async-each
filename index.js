@@ -13,7 +13,7 @@
     var returned = false;
 
     items.forEach(function(item, index) {
-      next(item, function(error, transformedItem) {
+      var step = function(error, transformedItem) {
         if (returned) return;
         if (error) {
           returned = true;
@@ -22,7 +22,10 @@
         transformed[index] = transformedItem;
         count += 1;
         if (count === items.length) return callback(undefined, transformed);
-      });
+      };
+      item = [].concat(item);
+      item.push(step);
+      next.apply(null, item);
     });
   };
 
