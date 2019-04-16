@@ -11,8 +11,9 @@
     "concurrent", "array",
     "flow", "control flow"
   ],
+  "files": ["index.js"],
   "homepage": "https://github.com/paulmillr/async-each/",
-  "author": "Paul Miller (http://paulmillr.com/)",
+  "author": "Paul Miller (https://paulmillr.com/)",
   "repository": "git://github.com/paulmillr/async-each.git",
   "main": "index.js",
   "dependencies": {}

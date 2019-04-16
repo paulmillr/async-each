@@ -9,7 +9,6 @@ For browsers and node.js.
 ## Installation
 * Just include async-each before your scripts.
 * `npm install async-each` if you’re using node.js.
-* `bower install async-each` if you’re using [Bower](http://bower.io).
 
 ## Usage
 
