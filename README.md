@@ -8,7 +8,7 @@ For browsers and node.js.
 
 ## Usage
 
-`npm install async-each` if you're using NPM / node.
+`npm install async-each` if you're using NPM.
 
 For browsers, just include async-each before your scripts and use global variable `asyncEach`
 
