@@ -1,7 +1,7 @@
 {
   "name": "async-each",
   "description": "No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach / map function for JavaScript.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "files": [
     "index.js"
