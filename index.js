@@ -20,7 +20,7 @@
           return callback(error);
         }
         transformed[index] = transformedItem;
-        if (index === total) return callback(undefined, transformed);
+        if (index === total - 1) return callback(undefined, transformed);
       });
     });
   };
