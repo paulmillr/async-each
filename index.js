@@ -10,6 +10,7 @@
     var total = items.length;
     if (total === 0) return callback(undefined, items);
     var transformed = new Array(total);
+    var transformedCount = 0;
     var returned = false;
 
     items.forEach(function (item, index) {
@@ -20,7 +21,8 @@
           return callback(error);
         }
         transformed[index] = transformedItem;
-        if (index === total - 1) return callback(undefined, transformed);
+        transformedCount += 1; // can't use index: last item could take more time
+        if (transformedCount === total) return callback(undefined, transformed);
       });
     });
   };
